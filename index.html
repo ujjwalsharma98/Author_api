@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>SEARCH | AUTHOR</title>
+    </head>
+
+    <body>
+        <div>
+
+            <!-- search box & button -->
+            <input type="text" name ="search" id="inputvalue" placeholder="Enter author code" pattern="^[a-zA-Z0-9 ]+$" required>
+            <button type="submit" id= "searchB" onclick="check(inputvalue);" style="display: inline">SEARCH</button>
+            <br>
+
+            <!-- about author -->
+            <p id= "fail_or_pass" style="display: inline-block" ></p> 
+            <p id= "dead" style="display: inline-block"></p>
+            <br>
+
+            <!-- latest work button -->
+            <button type="submit" id= "btn2" onclick="button2call();" style="visibility: hidden" >Show Recent Works</button>
+            
+            <!-- list added -->
+            <ol id="list">
+                <!-- visibility hidden -->
+                <li style="visibility: hidden" id="l1"></li>
+                <li style="visibility: hidden" id="l2"></li>
+                <li style="visibility: hidden" id="l3"></li>
+                <li style="visibility: hidden" id="l4"></li>
+                <li style="visibility: hidden" id="l5"></li>
+            </ol>
+        </div>
+
+        <!-- js added -->
+        <script src= "jquery-3.4.1 (1).js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html> 
